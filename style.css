@@ -1,82 +1,72 @@
-/* General Styling */
 body {
-    font-family: 'Arial', sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #f4f4f4;
+  color: #333;
+  line-height: 1.6;
 }
 
-/* Header */
 header {
-    background: linear-gradient(to right, #6a11cb, #2575fc);
-    color: white;
-    text-align: center;
-    padding: 50px 20px;
+  text-align: center;
+  background: #0d1117;
+  color: white;
+  padding: 2rem 0;
 }
 
-header h1 {
-    font-size: 3rem;
-    margin: 0;
-    animation: fadeIn 2s;
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  background: #161b22;
+  padding: 1rem;
 }
 
-header p {
-    font-size: 1.5rem;
-    margin-top: 10px;
-    animation: fadeIn 3s;
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
 }
 
-/* Section Styling */
 section {
-    padding: 50px 20px;
+  padding: 2rem;
+  max-width: 800px;
+  margin: auto;
 }
 
-#about, #projects {
-    background-color: #f4f4f4;
-    text-align: center;
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
 }
 
-#projects .project {
-    display: inline-block;
-    margin: 20px;
-    padding: 20px;
-    background: #fff;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s, box-shadow 0.3s;
+.skills-list li {
+  background: #1f6feb;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 5px;
+  list-style: none;
 }
 
-#projects .project:hover {
-    transform: scale(1.05);
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+.project-card {
+  background: white;
+  padding: 1rem;
+  border-left: 5px solid #1f6feb;
+  margin-bottom: 1rem;
+  border-radius: 5px;
 }
 
-/* Footer */
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background: #1f6feb;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
 footer {
-    background: #333;
-    color: white;
-    text-align: center;
-    padding: 20px;
-}
-
-footer a {
-    color: #00acee;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-footer .social-links a {
-    margin: 0 10px;
-    color: white;
-    font-size: 1.5rem;
-    transition: color 0.3s;
-}
-
-footer .social-links a:hover {
-    color: #6a11cb;
-}
-
-/* Animations */
-@keyframes fadeIn {
-    0% { opacity: 0; }
-    100% { opacity: 1; }
+  text-align: center;
+  padding: 1rem;
+  background: #0d1117;
+  color: white;
 }
